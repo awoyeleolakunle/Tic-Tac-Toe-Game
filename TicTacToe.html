@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./TicTacToe.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="mainContainer">
+       
+        <div class="gameTitle">TIC TAC TOE</div>
+        <div class="playerTurn"> Press Play To Start The Game</div>
+        <div class="gridContainer">
+            <input type="button" class="grid" id="grid1" onclick="boardInOne(),   tiePosition(), winningPositions()" ></input>
+            <input type="button" class="grid" id="grid2" onclick="boardInTwo(),   tiePosition(), winningPositions()" ></input>
+            <input type="button" class="grid" id="grid3" onclick="boardInThree(), tiePosition(), winningPositions()"></input>
+            <input type="button" class="grid" id="grid4" onclick="boardInFour(),  tiePosition(), winningPositions()"></input>
+            <input type="button" class="grid" id="grid5" onclick="boardInFive(),  tiePosition(), winningPositions()"></input>
+            <input type="button" class="grid" id="grid6" onclick="boardInSix(),   tiePosition(), winningPositions()"></input>
+            <input type="button" class="grid" id="grid7" onclick="boardInSeven(), tiePosition(), winningPositions()"></input>
+            <input type="button" class="grid" id="grid8" onclick="boardInEight(), tiePosition(), winningPositions()"></input>
+            <input type="button" class="grid" id="grid9" onclick="boardInNine(),  tiePosition(), winningPositions()"></input>
+        </div>
+        <div class="playBtn">
+            <button type="submit" class="play" >Play</button>
+            <button type="submit" class="exit" >Exit</button>
+        </div>
+
+    </div> 
+    <script src="./TicTacToe.js"></script>  
+</body>
+</html>
